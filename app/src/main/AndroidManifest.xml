@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.zs_wan_android">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.peramission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.zs.wanandroid.WanAndroidApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.zs.wanandroid.ui.main.system.activity.SystemActivity"></activity>
+        <activity android:name="com.zs.wanandroid.ui.register.RegisterActivity" />
+        <activity android:name="com.zs.wanandroid.ui.history.HistoryActivity" />
+        <activity android:name="com.zs.wanandroid.ui.my.MyArticleActivity" />
+        <activity android:name="com.zs.wanandroid.ui.share.ShareArticleActivity" />
+        <activity android:name="com.zs.wanandroid.ui.Integral.IntegralActivity" />
+        <activity android:name="com.zs.wanandroid.ui.rank.RankActivity" />
+        <activity
+            android:name="com.zs.wanandroid.ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 设置 -->
+        <activity
+            android:name="com.zs.wanandroid.ui.set.SetActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 主界面 -->
+        <activity
+            android:name="com.zs.wanandroid.ui.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 登陆 -->
+        <activity
+            android:name="com.zs.wanandroid.ui.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- web -->
+        <activity
+            android:name="com.zs.wanandroid.ui.web.WebActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 收藏 -->
+        <activity
+            android:name="com.zs.wanandroid.ui.collect.CollectActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 搜索 -->
+        <activity
+            android:name="com.zs.wanandroid.ui.search.SearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 轻松一下 -->
+        <activity
+            android:name="com.zs.wanandroid.ui.girl.GirlActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

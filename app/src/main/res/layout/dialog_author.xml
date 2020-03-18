@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/padding">
+
+    <TextView
+        style="@style/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_author" />
+
+    <TextView
+        android:id="@+id/tvWeChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/dialog_wechat"
+        style="@style/text_2"
+        android:textSize="@dimen/dialog_text_content"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:text="@string/dialog_email"
+        style="@style/text_2"
+        android:textSize="@dimen/dialog_text_content"/>
+
+    <TextView
+        android:id="@+id/tvJs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:text="@string/dialog_js"
+        style="@style/text_2"
+        android:textSize="@dimen/dialog_text_content"/>
+</LinearLayout>

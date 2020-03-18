@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">玩安卓</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tab_1">首页</string>
+    <string name="tab_2">项目</string>
+    <string name="tab_3">广场</string>
+    <string name="tab_4">公众号</string>
+    <string name="tab_5">我</string>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_author">关于作者</string>
+    <string name="dialog_wechat">微 信: zszsking</string>
+    <string name="dialog_email">邮 箱: 495968956@qq.com</string>
+    <string name="dialog_js">简 书: https://www.jianshu.com/u/274367e58472</string>
+
+    <string name="dialog_copy_wechat" translatable="false">zszsking</string>
+    <string name="dialog_copy_email">495968956@qq.com</string>
+    <string name="dialog_copy_js">https://www.jianshu.com/u/274367e58472</string>
+    <string name="integral_rule">积分规则</string>
+    <string name="share_information_1">只要是任何好文都可以分享哈，并不一定要是原创！投递的文章会进入广场 tab;</string>
+    <string name="share_information_2">CSDN，掘金，简书等官方博客站点会直接通过，不需要审核;</string>
+    <string name="share_information_3">其他个人站点会进入审核阶段，不要投递任何无效链接，测试的请尽快删除，否则可能会对你的账号产生一定影响;</string>
+    <string name="share_information_4">目前处于测试阶段，如果你发现500等错误，可以向我提交日志，让我们一起使网站变得更好。</string>
+    <string name="share_information_5">由于本站只有我一个人开发与维护，会尽力保证24小时内审核，当然有可能哪天太累，会延期，请保持佛系...</string>
+</resources>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:background="@color/white"
+    tools:context="com.zs.wanandroid.ui.set.SetActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ivHead"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="@dimen/set_padding"
+            android:layout_marginTop="80dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/head"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/ivHead"
+            app:layout_constraintTop_toTopOf="@+id/ivHead"
+            android:text="请先登录" />
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/text_1"
+            android:textSize="13dp"
+            app:layout_constraintLeft_toRightOf="@+id/ivHead"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName"
+            android:text="id:---" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            app:layout_constraintTop_toBottomOf="@+id/ivHead" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/llHistory"
+                android:background="@drawable/ripple_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHistory"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_1"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_2"
+                    android:text="足迹"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/llRanking"
+                android:background="@drawable/ripple_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvRanking"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_1"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_2"
+                    android:text="排名"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/division_line_thickening"
+            app:layout_constraintTop_toBottomOf="@+id/ivHead" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/ivHead">
+
+            <RelativeLayout
+                android:id="@+id/rlIntegral"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ripple_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/integral" />
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:text="我的积分"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tvIntegral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/text_2"
+                    android:textStyle="bold"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/tvIntegral"
+                    android:text="当前积分:"
+                    android:textColor="@color/text_2"
+                    android:textSize="@dimen/text_2"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCollect"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ripple_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:src="@mipmap/collect" />
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:text="我的收藏"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlArticle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ripple_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@mipmap/my_article" />
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:text="我的文章"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/division_line_thickening"
+                app:layout_constraintTop_toBottomOf="@+id/ivHead" />
+            <RelativeLayout
+                android:id="@+id/rlWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ripple_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@mipmap/website" />
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:text="网站"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlGirl"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ripple_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@mipmap/girl" />
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:text="轻松一下"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlSet"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ripple_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/set_padding"
+                android:paddingRight="@dimen/set_padding">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/set" />
+
+                <TextView
+                    style="@style/text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:text="设置"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

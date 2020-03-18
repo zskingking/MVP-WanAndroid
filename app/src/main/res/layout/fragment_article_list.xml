@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zs.wanandroid.ui.main.tab.list.TabListFragment">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:srlEnableAutoLoadMore="false"
+        app:srlEnableLoadMore="true"
+        app:srlEnableOverScrollBounce="true"
+        app:srlEnableRefresh="true"
+        android:id="@+id/smartRefresh">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvProject"
+            android:overScrollMode="never"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.zs.wanandroid.weight.LoadingTip
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingTip"
+        android:visibility="gone"/>
+</FrameLayout>

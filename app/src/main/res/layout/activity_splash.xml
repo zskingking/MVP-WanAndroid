@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.zs.wanandroid.ui.SplashActivity">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivLogo"
+        android:layout_marginTop="170dp"
+        android:src="@mipmap/logo_green" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WanAndroid"
+        android:layout_marginTop="6dp"
+        android:textSize="30dp"
+        android:textColor="@color/theme_2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/text_2"
+        android:textSize="@dimen/text_1"
+        android:text="一个专业的Android社区"/>
+</LinearLayout>

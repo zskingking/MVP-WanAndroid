@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zs.wanandroid.ui.main.system.list.SystemListFragment">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/rvSystem"
+       android:overScrollMode="never"
+       android:paddingLeft="@dimen/padding_left"
+       android:paddingRight="@dimen/padding_right"
+       android:paddingStart="@dimen/padding_left"
+       android:paddingEnd="@dimen/padding_right" />
+   <com.zs.wanandroid.weight.LoadingTip
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/loadingTip"
+       android:visibility="gone"/>
+</FrameLayout>
