@@ -1,6 +1,6 @@
 # zs-wan-android
 
-### 非常感谢鸿洋大神提供的api，让我实现了为时已久的小目标。同时也感谢阿里巴巴矢量图&花瓣网提供的图标和界面设计。如果觉得有帮助到你，请给个star。App目前是第一版，所以存在很多问题，欢迎issues，事先谢过。附上github：[https://github.com/zskingking/zs-wan-android](https://github.com/zskingking/zs-wan-android)
+### 非常感谢鸿洋大神提供的api，让我实现了为时已久的小目标。同时也感谢阿里巴巴矢量图&花瓣网提供的图标和界面设计。如果觉得有帮助到你，请给个star。App目前是第一版，所以存在很多问题，欢迎issues，事先谢过。附上github：[https://github.com/zskingking/WanAndroid-ZS](https://github.com/zskingking/WanAndroid-ZS)
 
 ## 效果图如下
 ![](http://upload-images.jianshu.io/upload_images/10073662-090c60f1edadaf32.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/q/50)
