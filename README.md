@@ -1,10 +1,15 @@
-# zs-wan-android
+## WanAndroid
 
 非常感谢鸿洋大神提供的api，让我实现了为时已久的小目标。目前基本实现WanAddroid API对应的功能，如果觉得有帮助到你，请给个star。App目前是第一版，所以存在很多问题，欢迎issues，事先谢过。附上github：[https://github.com/zskingking/WanAndroid-ZS](https://github.com/zskingking/WanAndroid-ZS)
 
 
 ## apk下载
+
+#### 二维码
+
 ![](https://upload-images.jianshu.io/upload_images/10073662-bb3e6b82f81e6640.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+apk目前托管在码云上，所以下载时需要登录，如果觉得麻烦也可直接clone代码运行在手机上。
 
 
 ## 效果图如下
@@ -16,7 +21,7 @@
 ![](http://upload-images.jianshu.io/upload_images/10073662-1031a7be06be6e16.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/q/50)
 
 ## 项目介绍
-wan android是基于鸿洋大神提供的api进行开的一款Android社区app，内部共包含五个模块：首页、项目、广场、公众号、我的
+wan android是基于鸿洋大神提供的api进行开的一款Android社区app，内部共包含五个模块：首页、项目、广场、公众号、我的。关于空白页、loading、网络异常作者封装了一个ui组件，关于网络异常正在优化阶段，所以当网络异常时没有刷新提示，另外历史记录正在琢磨本地保存策略，不过后续都会逐一完善，敬请关注。
 
 ## 首页
 首页主要包含文章列表和banner位，可以快速对最新最热的文章进行预览
