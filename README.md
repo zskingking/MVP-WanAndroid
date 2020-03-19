@@ -9,7 +9,7 @@
 
 ![](https://upload-images.jianshu.io/upload_images/10073662-bb3e6b82f81e6640.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-apk目前托管在码云上，所以下载时需要登录，如果觉得麻烦也可直接clone代码运行在手机上。
+apk目前托管在码云上，所以下载时需要登录，如果觉得麻烦也可直接clone代码运行在手机上(可能更麻烦～～)。
 
 
 ## 效果图如下
