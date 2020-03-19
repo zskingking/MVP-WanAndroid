@@ -9,6 +9,10 @@
 ![](http://upload-images.jianshu.io/upload_images/10073662-dde68caf87b00d54.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/q/50)
 
 ![](http://upload-images.jianshu.io/upload_images/10073662-1031a7be06be6e16.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/q/50)
+
+## apk下载
+![](https://upload-images.jianshu.io/upload_images/10073662-bb3e6b82f81e6640.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ## 项目介绍
 wan android是基于鸿洋大神提供的api进行开的一款Android社区app，内部共包含五个模块：首页、项目、广场、公众号、我的
 
