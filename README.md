@@ -2,6 +2,11 @@
 
 ### 非常感谢鸿洋大神提供的api，让我实现了为时已久的小目标。同时也感谢阿里巴巴矢量图&花瓣网提供的图标和界面设计。如果觉得有帮助到你，请给个star。App目前是第一版，所以存在很多问题，欢迎issues，事先谢过。附上github：[https://github.com/zskingking/WanAndroid-ZS](https://github.com/zskingking/WanAndroid-ZS)
 
+
+## apk下载
+![](https://upload-images.jianshu.io/upload_images/10073662-bb3e6b82f81e6640.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 ## 效果图如下
 ![](http://upload-images.jianshu.io/upload_images/10073662-090c60f1edadaf32.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/q/50)
 ![](http://upload-images.jianshu.io/upload_images/10073662-c9e7d9bfc4669eda.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/q/50)
@@ -9,9 +14,6 @@
 ![](http://upload-images.jianshu.io/upload_images/10073662-dde68caf87b00d54.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/q/50)
 
 ![](http://upload-images.jianshu.io/upload_images/10073662-1031a7be06be6e16.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1080/q/50)
-
-## apk下载
-![](https://upload-images.jianshu.io/upload_images/10073662-bb3e6b82f81e6640.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 项目介绍
 wan android是基于鸿洋大神提供的api进行开的一款Android社区app，内部共包含五个模块：首页、项目、广场、公众号、我的
