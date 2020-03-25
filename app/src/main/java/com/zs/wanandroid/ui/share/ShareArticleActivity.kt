@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.base.BaseActivity
-import com.zs.wanandroid.proxy.DialogProxy
+import com.zs.wanandroid.utils.DialogUtils
 import com.zs.wanandroid.utils.ToastUtils
 import kotlinx.android.synthetic.main.activity_share_articel.*
 
@@ -27,7 +27,7 @@ class ShareArticleActivity : BaseActivity<ShareContract.Presenter<ShareContract.
         when(p0?.id){
             R.id.ivBack->finish()
             R.id.btShare->{
-                DialogProxy.loading(this,"正在分享")
+                DialogUtils.loading(this,"正在分享")
                 val title = etTitle.text.toString()
                 val link = etLink.text.toString()
                 presenter?.share(title,link)
@@ -36,13 +36,13 @@ class ShareArticleActivity : BaseActivity<ShareContract.Presenter<ShareContract.
     }
 
     override fun shareSuccess() {
-        DialogProxy.dismiss()
+        DialogUtils.dismiss()
         finish()
     }
 
 
     override fun onError(error: String) {
-        DialogProxy.dismiss()
+        DialogUtils.dismiss()
         ToastUtils.show(error)
     }
 

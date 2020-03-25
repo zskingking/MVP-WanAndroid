@@ -8,14 +8,12 @@ import io.reactivex.disposables.Disposable
 import java.util.concurrent.TimeUnit
 import android.Manifest
 import android.os.Bundle
-import android.util.Log
 import com.example.zs_wan_android.R
-import com.google.gson.Gson
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.IntegralEntity
 import com.zs.wanandroid.http.HttpDefaultObserver
 import com.zs.wanandroid.http.RetrofitHelper
-import com.zs.wanandroid.proxy.DialogProxy
+import com.zs.wanandroid.utils.DialogUtils
 import com.zs.wanandroid.proxy.IConfirmClickCallBack
 import com.zs.wanandroid.utils.PrefUtils
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -51,7 +49,7 @@ class SplashActivity : BaseActivity<IBasePresenter<*>>(), PermissionCallbacks {
             startIntent()
         }else{
             //为申请，显示申请提示语
-            DialogProxy.tips(this,tips,object :IConfirmClickCallBack{
+            DialogUtils.tips(this,tips,object :IConfirmClickCallBack{
                 override fun onClick() {
                     RequestLocationAndCallPermission()
                 }

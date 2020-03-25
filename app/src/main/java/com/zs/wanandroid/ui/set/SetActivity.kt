@@ -6,7 +6,7 @@ import android.view.View
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.base.BaseActivity
 import com.zs.wanandroid.constants.Constants
-import com.zs.wanandroid.proxy.DialogProxy
+import com.zs.wanandroid.utils.DialogUtils
 import com.zs.wanandroid.proxy.IConfirmClickCallBack
 import com.zs.wanandroid.ui.login.LoginActivity
 import com.zs.wanandroid.ui.web.WebActivity
@@ -37,7 +37,7 @@ class SetActivity : BaseActivity<SetContract.Presenter<SetContract.View>>(),SetC
             R.id.ivBack->finish()
             //清除缓存
             R.id.tvClear->{
-                DialogProxy.confirm(this,"缓存中可能包含小姐姐照片哦，是否确定清除?",object : IConfirmClickCallBack {
+                DialogUtils.confirm(this,"缓存中可能包含小姐姐照片哦，是否确定清除?",object : IConfirmClickCallBack {
                     override fun onClick() {
                         CacheDataManager.clearAllCache(this@SetActivity)
                         tvClearValue.text = ""
@@ -49,7 +49,7 @@ class SetActivity : BaseActivity<SetContract.Presenter<SetContract.View>>(),SetC
             R.id.tvVersion-> ToastUtils.show("已是最新版本")
             //关于作者
             R.id.tvAuthor->{
-                DialogProxy.author(this)
+                DialogUtils.author(this)
             }
             //项目
             R.id.tvProject->{
@@ -60,14 +60,14 @@ class SetActivity : BaseActivity<SetContract.Presenter<SetContract.View>>(),SetC
             }
             //版权
             R.id.tvCopyright->{
-                DialogProxy.tips(this,Constants.COPYRIGHT,object : IConfirmClickCallBack {
+                DialogUtils.tips(this,Constants.COPYRIGHT,object : IConfirmClickCallBack {
                     override fun onClick() {
                     }
                 })
             }
             //退出登录
             R.id.tvLogout->{
-                DialogProxy.confirm(this,"是否确定退出?",object : IConfirmClickCallBack {
+                DialogUtils.confirm(this,"是否确定退出?",object : IConfirmClickCallBack {
                     override fun onClick() {
                         presenter?.logout()
                     }
