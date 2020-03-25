@@ -59,7 +59,7 @@
 >* LabelsView
 
 ### 5.总结
-麻雀虽小，五脏俱全，虽然项目很简单，但内部代码以及整个架构我觉得还是具备参考价值的，附上[github](https://github.com/zskingking/zs-wan-android)，让我们共同进步。
+麻雀虽小，五脏俱全，虽然项目很简单，但内部代码以及整个架构我觉得还是具备参考价值的，附上[github](https://github.com/zskingking/WanAndroid-ZS)，让我们共同进步。
 
 也可直接扫码下载apk。apk目前托管在码云上，所以扫描二维码可能需要登录。
 ![apk二维码](https://upload-images.jianshu.io/upload_images/10073662-b6953eee3d1f2199.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
