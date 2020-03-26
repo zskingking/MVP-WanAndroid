@@ -4,15 +4,14 @@ import android.text.Html
 import android.text.TextUtils
 import android.widget.ImageView
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter
-import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
+import com.example.baselibrary.widget.OnLimitClickHelper
+import com.example.baselibrary.widget.OnLimitClickListener
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.ArticleEntity
 import com.zs.wanandroid.proxy.ImageLoad
 import com.zs.wanandroid.utils.ColorUtils
-import com.zs.wanandroid.weight.OnLimitClickHelper
-import com.zs.wanandroid.weight.OnLimitClickListener
 
 /**
  * 文章适配器

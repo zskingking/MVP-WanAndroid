@@ -75,17 +75,15 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.okhttpVersion"
 
     implementation "com.orhanobut:logger:2.1.1"
-    implementation "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"
     implementation "cn.bingoogolapple:bga-banner:$rootProject.ext.bannerVersion"
     implementation "com.scwang.smartrefresh:SmartRefreshLayout:$rootProject.ext.refreshLayoutVersion"
     implementation "com.scwang.smartrefresh:SmartRefreshHeader:$rootProject.ext.refreshHeaderVersion"
     implementation "org.greenrobot:eventbus:$rootProject.ext.eventBusVersion"
     implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:$rootProject.ext.baseAdapterVersion"
-    implementation "com.wang.avi:library:$rootProject.ext.aviLibraryVersion"
     implementation "org.greenrobot:greendao:$rootProject.ext.greenDaoVersion"
-    implementation "com.github.hackware1993:MagicIndicator:$rootProject.ext.magicVersion"
     implementation "pub.devrel:easypermissions:$rootProject.ext.permissionVersion"
     implementation "com.github.donkingliang:LabelsView:$rootProject.ext.labelsViewVersion"
     implementation "com.github.franmontiel:PersistentCookieJar:$rootProject.ext.cookieVersion"
 
+    implementation project(":baselibrary")
 }

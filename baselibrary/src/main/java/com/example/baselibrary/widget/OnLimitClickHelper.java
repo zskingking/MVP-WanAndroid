@@ -1,15 +1,8 @@
-package com.zs.wanandroid.weight;
+package com.example.baselibrary.widget;
 
-import android.Manifest;
 import android.view.View;
 
 import java.util.Calendar;
-
-import pub.devrel.easypermissions.AfterPermissionGranted;
-import pub.devrel.easypermissions.EasyPermissions;
-
-import static android.Manifest.permission.CALL_PHONE;
-import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 /**
  * des 防止快速点击抖动
@@ -25,7 +18,6 @@ public class OnLimitClickHelper implements View.OnClickListener {
     public OnLimitClickHelper(OnLimitClickListener onLimitClickListener){
         this.onLimitClickListener = onLimitClickListener;
     }
-
 
     @Override
     public void onClick(View v) {

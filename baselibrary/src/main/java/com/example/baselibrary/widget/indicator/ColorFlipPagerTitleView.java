@@ -1,4 +1,4 @@
-package com.zs.wanandroid.weight.indicator;
+package com.example.baselibrary.widget.indicator;
 
 import android.content.Context;
 

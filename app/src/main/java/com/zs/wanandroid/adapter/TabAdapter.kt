@@ -3,15 +3,16 @@ package com.zs.wanandroid.adapter
 import android.content.Context
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
+import com.example.baselibrary.widget.indicator.ZsSimplePagerTitleView
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.utils.ColorUtils
 import com.zs.wanandroid.weight.indicator.OnTabClickListener
-import com.zs.wanandroid.weight.indicator.ZsSimplePagerTitleView
 import net.lucode.hackware.magicindicator.buildins.UIUtil
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator
+
 
 /**
  * tab适配器
@@ -19,7 +20,7 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.Li
  * @author zs
  * @date 2020-03-14
  */
-class TabAdapter(tabList:MutableList<String>) :CommonNavigatorAdapter(){
+class TabAdapter(tabList:MutableList<String>) : CommonNavigatorAdapter(){
 
     private var tabList = tabList
 

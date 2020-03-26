@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
-import com.example.zs_wan_android.R
+import com.example.baselibrary.R
 import com.wang.avi.AVLoadingIndicatorView
 
 /**

@@ -4,11 +4,10 @@ import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
-import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
+import com.example.baselibrary.widget.GlideRoundTransform
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.WanAndroidApplication
-import com.zs.wanandroid.weight.GlideRoundTransform
 
 
 /**

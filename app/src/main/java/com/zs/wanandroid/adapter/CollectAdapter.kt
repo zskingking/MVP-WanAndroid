@@ -4,10 +4,11 @@ import android.view.View
 import android.widget.ImageView
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
+import com.example.baselibrary.widget.OnLimitClickHelper
+import com.example.baselibrary.widget.OnLimitClickListener
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.entity.CollectEntity
-import com.zs.wanandroid.weight.OnLimitClickHelper
-import com.zs.wanandroid.weight.OnLimitClickListener
+
 
 /**
  * des 收藏适配器

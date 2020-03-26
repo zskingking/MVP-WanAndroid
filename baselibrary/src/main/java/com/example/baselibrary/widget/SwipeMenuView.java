@@ -1,4 +1,4 @@
-package com.zs.wanandroid.weight;
+package com.example.baselibrary.widget;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
 
-import com.example.zs_wan_android.R;
+import com.example.baselibrary.R;
 
 
 public class SwipeMenuView extends ViewGroup {
