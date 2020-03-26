@@ -71,7 +71,7 @@ object Constants {
     /**
      * app github
      */
-    const val APP_GITHUB = "https://github.com/zskingking/zs-wan-android"
+    const val APP_GITHUB = "https://github.com/zskingking/WanAndroid-ZS"
     /**
      * app name
      */
