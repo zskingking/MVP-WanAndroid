@@ -6,6 +6,7 @@ import android.view.View
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.base.BaseActivity
 import com.zs.wanandroid.constants.Constants
+import com.zs.wanandroid.constants.UrlConstants
 import com.zs.wanandroid.utils.DialogUtils
 import com.zs.wanandroid.proxy.IConfirmClickCallBack
 import com.zs.wanandroid.ui.login.LoginActivity
@@ -54,7 +55,7 @@ class SetActivity : BaseActivity<SetContract.Presenter<SetContract.View>>(),SetC
             //项目
             R.id.tvProject->{
                 intent(Bundle().apply {
-                    putString(Constants.WEB_URL,Constants.APP_GITHUB)
+                    putString(Constants.WEB_URL, UrlConstants.APP_GITHUB)
                     putString(Constants.WEB_TITLE,Constants.APP_NAME)
                 }, WebActivity::class.java,false)
             }

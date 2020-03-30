@@ -5,6 +5,7 @@ import android.view.View
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.base.LazyFragment
 import com.zs.wanandroid.constants.Constants
+import com.zs.wanandroid.constants.UrlConstants
 import com.zs.wanandroid.entity.IntegralEntity
 import com.zs.wanandroid.event.LoginEvent
 import com.zs.wanandroid.event.LogoutEvent
@@ -107,7 +108,7 @@ class MineFragment : LazyFragment<MineContract.Presenter<MineContract.View>>(),V
             //官网
             R.id.rlWebsite->{
                 intent(Bundle().apply {
-                    putString(Constants.WEB_URL,Constants.WEBSITE)
+                    putString(Constants.WEB_URL, UrlConstants.WEBSITE)
                     putString(Constants.WEB_TITLE,Constants.APP_NAME)
                 }, WebActivity::class.java,false)
             }

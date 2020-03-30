@@ -11,6 +11,7 @@ import com.scwang.smartrefresh.layout.listener.OnRefreshListener
 import com.zs.wanandroid.adapter.RankAdapter
 import com.zs.wanandroid.base.BaseActivity
 import com.zs.wanandroid.constants.Constants
+import com.zs.wanandroid.constants.UrlConstants
 import com.zs.wanandroid.entity.RankEntity
 import com.zs.wanandroid.ui.web.WebActivity
 import com.zs.wanandroid.utils.ToastUtils
@@ -59,7 +60,7 @@ class RankActivity : BaseActivity<RankContract.Presenter<RankContract.View>>(),R
         }
         ivDetail.setOnClickListener {
             intent(Bundle().apply {
-                putString(Constants.WEB_URL, Constants.INTEGRAL_RULE)
+                putString(Constants.WEB_URL, UrlConstants.INTEGRAL_RULE)
                 putString(Constants.WEB_TITLE,getString(R.string.integral_rule))
             }, WebActivity::class.java,false)
         }

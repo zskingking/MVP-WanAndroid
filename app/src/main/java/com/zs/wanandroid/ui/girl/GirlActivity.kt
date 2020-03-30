@@ -8,6 +8,7 @@ import com.zs.wanandroid.base.BaseActivity
 import com.zs.wanandroid.base.IBasePresenter
 import com.zs.wanandroid.base.IBaseView
 import com.zs.wanandroid.constants.Constants
+import com.zs.wanandroid.constants.UrlConstants
 import com.zs.wanandroid.utils.StatusUtils
 import kotlinx.android.synthetic.main.activity_girl.*
 
@@ -23,15 +24,15 @@ class GirlActivity : BaseActivity<IBasePresenter<IBaseView>>() {
     override fun init(savedInstanceState: Bundle?) {
         var girlList = mutableListOf<String>()
         var fragmentList = mutableListOf<Fragment>()
-        girlList.add(Constants.GIRL1)
-        girlList.add(Constants.GIRL2)
-        girlList.add(Constants.GIRL3)
-        girlList.add(Constants.GIRL4)
-        girlList.add(Constants.GIRL5)
-        girlList.add(Constants.GIRL6)
-        girlList.add(Constants.GIRL7)
-        girlList.add(Constants.GIRL8)
-        girlList.add(Constants.GIRL9)
+        girlList.add(UrlConstants.GIRL1)
+        girlList.add(UrlConstants.GIRL2)
+        girlList.add(UrlConstants.GIRL3)
+        girlList.add(UrlConstants.GIRL4)
+        girlList.add(UrlConstants.GIRL5)
+        girlList.add(UrlConstants.GIRL6)
+        girlList.add(UrlConstants.GIRL7)
+        girlList.add(UrlConstants.GIRL8)
+        girlList.add(UrlConstants.GIRL9)
         girlList.forEach{
             val fragment = GirlFragment()
             val bundle = Bundle()
