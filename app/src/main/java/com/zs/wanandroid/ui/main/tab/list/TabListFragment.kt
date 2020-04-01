@@ -6,6 +6,7 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
+import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
@@ -17,7 +18,6 @@ import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.ArticleEntity
 import com.zs.wanandroid.ui.web.WebActivity
 import com.zs.wanandroid.utils.AppManager
-import com.zs.wanandroid.utils.ToastUtils
 import com.zs.wanandroid.weight.ReloadListener
 import kotlinx.android.synthetic.main.fragment_article_list.*
 import kotlinx.android.synthetic.main.fragment_article_list.loadingTip

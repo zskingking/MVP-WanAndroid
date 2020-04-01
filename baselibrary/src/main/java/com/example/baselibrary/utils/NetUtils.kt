@@ -1,4 +1,4 @@
-package com.zs.wanandroid.utils
+package com.example.baselibrary.utils
 
 class NetUtils {
 

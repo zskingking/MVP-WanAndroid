@@ -1,7 +1,7 @@
 package com.zs.wanandroid.http;
 
+import com.example.baselibrary.utils.PrefUtils;
 import com.zs.wanandroid.constants.Constants;
-import com.zs.wanandroid.utils.PrefUtils;
 
 import java.io.IOException;
 import java.util.HashSet;

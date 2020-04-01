@@ -3,10 +3,10 @@ package com.zs.wanandroid.ui.share
 import android.content.Context
 import android.os.Bundle
 import android.view.View
+import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.base.BaseActivity
 import com.zs.wanandroid.utils.DialogUtils
-import com.zs.wanandroid.utils.ToastUtils
 import kotlinx.android.synthetic.main.activity_share_articel.*
 
 /**

@@ -1,11 +1,12 @@
-package com.zs.wanandroid.utils;
+package com.example.baselibrary.utils;
 
 import android.graphics.Color;
 import android.text.TextUtils;
 
 import androidx.core.content.ContextCompat;
 
-import com.zs.wanandroid.WanAndroidApplication;
+import com.example.baselibrary.BaseApplication;
+
 
 /**
  * des 颜色处理工具类
@@ -57,7 +58,7 @@ public class ColorUtils {
      * @return
      */
     public static int parseColor(int color) {
-        return ContextCompat.getColor(WanAndroidApplication.getContext(),color);
+        return ContextCompat.getColor(BaseApplication.Companion.getContext(),color);
     }
 
     /**

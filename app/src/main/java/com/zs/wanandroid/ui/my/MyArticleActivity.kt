@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
+import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
@@ -19,7 +20,6 @@ import com.zs.wanandroid.event.LoginEvent
 import com.zs.wanandroid.event.ShareEvent
 import com.zs.wanandroid.ui.share.ShareArticleActivity
 import com.zs.wanandroid.ui.web.WebActivity
-import com.zs.wanandroid.utils.ToastUtils
 import com.zs.wanandroid.weight.ReloadListener
 import kotlinx.android.synthetic.main.activity_my_article.*
 import kotlinx.android.synthetic.main.activity_my_article.ivBack

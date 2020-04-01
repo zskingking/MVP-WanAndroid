@@ -2,6 +2,8 @@ package com.zs.wanandroid.ui.main.mine
 
 import android.os.Bundle
 import android.view.View
+import com.example.baselibrary.utils.PrefUtils
+import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.base.LazyFragment
 import com.zs.wanandroid.constants.Constants
@@ -19,8 +21,6 @@ import com.zs.wanandroid.ui.rank.RankActivity
 import com.zs.wanandroid.ui.set.SetActivity
 import com.zs.wanandroid.ui.web.WebActivity
 import com.zs.wanandroid.utils.AppManager
-import com.zs.wanandroid.utils.PrefUtils
-import com.zs.wanandroid.utils.ToastUtils
 import kotlinx.android.synthetic.main.fragment_mine.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -90,7 +90,7 @@ class MineFragment : LazyFragment<MineContract.Presenter<MineContract.View>>(),V
                 }
             }
             //足迹
-            R.id.llHistory->ToastUtils.show("正在开发中...")
+            R.id.llHistory-> ToastUtils.show("正在开发中...")
             //排名
             R.id.llRanking->{
                 intent(Bundle().apply {

@@ -3,9 +3,10 @@ package com.zs.wanandroid.base
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.baselibrary.utils.ColorUtils
+import com.example.baselibrary.utils.StatusUtils
 import com.zs.wanandroid.ui.login.LoginActivity
 import com.zs.wanandroid.utils.AppManager
-import com.zs.wanandroid.utils.StatusUtils
 
 abstract class BaseActivity<P: IBasePresenter<*>> : AppCompatActivity() {
 
@@ -32,7 +33,7 @@ abstract class BaseActivity<P: IBasePresenter<*>> : AppCompatActivity() {
      * 设置状态栏背景颜色
      */
     protected open fun setStatusColor() {
-        StatusUtils.setUseStatusBarColor(this, com.zs.wanandroid.utils.ColorUtils.parseColor("#00ffffff"))
+        StatusUtils.setUseStatusBarColor(this, ColorUtils.parseColor("#00ffffff"))
     }
 
     /**

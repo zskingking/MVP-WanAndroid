@@ -5,12 +5,12 @@ import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.view.View
+import com.example.baselibrary.utils.PrefUtils
+import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.base.BaseActivity
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.ui.register.RegisterActivity
-import com.zs.wanandroid.utils.PrefUtils
-import com.zs.wanandroid.utils.ToastUtils
 import kotlinx.android.synthetic.main.activity_login.*
 
 

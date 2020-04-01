@@ -4,6 +4,7 @@ package com.zs.wanandroid.ui.main.system.navigaton
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseViewHolder
+import com.example.baselibrary.utils.ToastUtils
 
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.adapter.NavigationAdapter
@@ -12,7 +13,6 @@ import com.zs.wanandroid.base.LazyFragment
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.NavigationEntity
 import com.zs.wanandroid.ui.web.WebActivity
-import com.zs.wanandroid.utils.ToastUtils
 import kotlinx.android.synthetic.main.fragment_system_list.*
 
 /**

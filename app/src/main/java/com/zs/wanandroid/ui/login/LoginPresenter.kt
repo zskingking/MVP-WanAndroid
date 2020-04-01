@@ -1,12 +1,12 @@
 package com.zs.wanandroid.ui.login
 
+import com.example.baselibrary.utils.PrefUtils
 import com.zs.wanandroid.base.BasePresenter
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.UserEntity
 import com.zs.wanandroid.http.HttpDefaultObserver
 import com.zs.wanandroid.event.LoginEvent
 import com.zs.wanandroid.http.RetrofitHelper
-import com.zs.wanandroid.utils.PrefUtils
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers

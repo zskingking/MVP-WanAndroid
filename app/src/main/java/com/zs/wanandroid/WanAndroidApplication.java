@@ -3,6 +3,8 @@ package com.zs.wanandroid;
 import android.app.Application;
 import android.content.Context;
 
+import com.example.baselibrary.BaseApplication;
+import com.example.baselibrary.utils.ColorUtils;
 import com.example.zs_wan_android.R;
 import com.scwang.smartrefresh.header.MaterialHeader;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
@@ -10,7 +12,6 @@ import com.scwang.smartrefresh.layout.api.DefaultRefreshFooterCreator;
 import com.scwang.smartrefresh.layout.api.RefreshFooter;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.footer.BallPulseFooter;
-import com.zs.wanandroid.utils.ColorUtils;
 
 
 /**
@@ -18,8 +19,7 @@ import com.zs.wanandroid.utils.ColorUtils;
  * @author zs
  * @date 2020-03-05
  */
-public class WanAndroidApplication extends Application {
-    private static Application baseApplication;
+public class WanAndroidApplication extends BaseApplication {
     //static 代码段可以防止内存泄露
     static {
         //设置全局的Header构建器
@@ -41,13 +41,5 @@ public class WanAndroidApplication extends Application {
         });
     }
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        baseApplication = this;
-    }
 
-    public static Context getContext(){
-        return baseApplication;
-    }
 }

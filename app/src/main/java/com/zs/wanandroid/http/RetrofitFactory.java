@@ -1,5 +1,6 @@
 package com.zs.wanandroid.http;
 
+import com.example.baselibrary.BaseApplication;
 import com.example.baselibrary.http.HttpLoggingInterceptor;
 import com.franmontiel.persistentcookiejar.ClearableCookieJar;
 import com.franmontiel.persistentcookiejar.PersistentCookieJar;
@@ -28,13 +29,13 @@ public class RetrofitFactory {
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor("OkHttp");
         loggingInterceptor.setPrintLevel(HttpLoggingInterceptor.Level.BODY);
         loggingInterceptor.setColorLevel(Level.INFO);
-        File cacheFile = new File(WanAndroidApplication.getContext().getCacheDir(), "cache");
+        File cacheFile = new File(BaseApplication.Companion.getContext().getCacheDir(), "cache");
         //100Mb
         Cache cache = new Cache(cacheFile, 1024 * 1024 * 100);
 
         ClearableCookieJar cookieJar =
                 new PersistentCookieJar(new SetCookieCache(),
-                        new SharedPrefsCookiePersistor(WanAndroidApplication.getContext()));
+                        new SharedPrefsCookiePersistor(BaseApplication.Companion.getContext()));
         return new OkHttpClient.Builder()
                 .readTimeout(Constants.DEFAULT_TIMEOUT, TimeUnit.MILLISECONDS)
                 .connectTimeout(Constants.DEFAULT_TIMEOUT, TimeUnit.MILLISECONDS)

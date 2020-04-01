@@ -6,13 +6,13 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.adapter.FragmentListAdapter
 import com.zs.wanandroid.adapter.TabAdapter
 import com.zs.wanandroid.base.BaseFragment
 import com.zs.wanandroid.entity.TabEntity
 import com.zs.wanandroid.ui.main.tab.list.TabListFragment
-import com.zs.wanandroid.utils.ToastUtils
 import com.zs.wanandroid.weight.indicator.OnTabClickListener
 import kotlinx.android.synthetic.main.fragment_project.*
 import net.lucode.hackware.magicindicator.ViewPagerHelper

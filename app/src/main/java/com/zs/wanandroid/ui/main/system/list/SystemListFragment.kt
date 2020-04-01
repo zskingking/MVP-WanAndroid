@@ -3,6 +3,7 @@ package com.zs.wanandroid.ui.main.system.list
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseViewHolder
+import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.adapter.OnSystemClickListener
 import com.zs.wanandroid.adapter.SystemAdapter
@@ -10,7 +11,6 @@ import com.zs.wanandroid.base.LazyFragment
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.SystemListEntity
 import com.zs.wanandroid.ui.main.system.activity.SystemActivity
-import com.zs.wanandroid.utils.ToastUtils
 import kotlinx.android.synthetic.main.fragment_system_list.*
 
 

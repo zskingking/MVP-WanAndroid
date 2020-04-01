@@ -1,8 +1,7 @@
-package com.zs.wanandroid.utils
+package com.example.baselibrary.utils
 
 import android.content.Context
-
-import com.zs.wanandroid.WanAndroidApplication
+import com.example.baselibrary.BaseApplication
 
 /**
  * @author zs
@@ -10,7 +9,7 @@ import com.zs.wanandroid.WanAndroidApplication
  */
 object UIUtils {
 
-    val context: Context get() = WanAndroidApplication.getContext()
+    val context: Context get() = BaseApplication.getContext()
 
     fun dip2px(context: Context, dpValue: Float): Int {
         val density = context.resources.displayMetrics.density

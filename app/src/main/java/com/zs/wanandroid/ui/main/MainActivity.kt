@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Lifecycle
+import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.base.BaseActivity
 import com.zs.wanandroid.base.IBasePresenter
@@ -106,7 +107,7 @@ class MainActivity : BaseActivity<IBasePresenter<*>>(),
     var lastTime: Long = 0
     override fun onBackPressed() {
         if (System.currentTimeMillis() - this.lastTime > 2000L) {
-            com.zs.wanandroid.utils.ToastUtils.show("再按一次退出程序")
+            ToastUtils.show("再按一次退出程序")
             this.lastTime = System.currentTimeMillis()
             return
         } else {

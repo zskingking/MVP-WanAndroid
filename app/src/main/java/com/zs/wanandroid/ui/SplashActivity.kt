@@ -8,6 +8,7 @@ import io.reactivex.disposables.Disposable
 import java.util.concurrent.TimeUnit
 import android.Manifest
 import android.os.Bundle
+import com.example.baselibrary.utils.PrefUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.IntegralEntity
@@ -15,7 +16,6 @@ import com.zs.wanandroid.http.HttpDefaultObserver
 import com.zs.wanandroid.http.RetrofitHelper
 import com.zs.wanandroid.utils.DialogUtils
 import com.zs.wanandroid.proxy.IConfirmClickCallBack
-import com.zs.wanandroid.utils.PrefUtils
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import pub.devrel.easypermissions.AfterPermissionGranted

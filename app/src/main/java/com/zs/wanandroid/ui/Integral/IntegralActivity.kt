@@ -10,7 +10,6 @@ import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.zs.wanandroid.adapter.IntegralAdapter
 import com.zs.wanandroid.base.BaseActivity
 import com.zs.wanandroid.entity.IntegralRecordEntity
-import com.zs.wanandroid.utils.ToastUtils
 import com.zs.wanandroid.weight.ReloadListener
 import kotlinx.android.synthetic.main.activity_integral.*
 import kotlinx.android.synthetic.main.activity_integral.ivBack
@@ -19,8 +18,9 @@ import kotlinx.android.synthetic.main.activity_integral.smartRefresh
 import android.animation.ValueAnimator
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.IntegralEntity
-import com.zs.wanandroid.utils.PrefUtils
 import android.view.animation.DecelerateInterpolator
+import com.example.baselibrary.utils.PrefUtils
+import com.example.baselibrary.utils.ToastUtils
 
 
 /**

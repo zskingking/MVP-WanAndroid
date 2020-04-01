@@ -3,9 +3,9 @@ package com.zs.wanandroid.adapter
 import android.content.Context
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
+import com.example.baselibrary.utils.ColorUtils
 import com.example.baselibrary.widget.indicator.ZsSimplePagerTitleView
 import com.example.zs_wan_android.R
-import com.zs.wanandroid.utils.ColorUtils
 import com.zs.wanandroid.weight.indicator.OnTabClickListener
 import net.lucode.hackware.magicindicator.buildins.UIUtil
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter

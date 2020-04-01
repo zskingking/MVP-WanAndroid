@@ -15,6 +15,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.example.baselibrary.utils.KeyBoardUtil
+import com.example.baselibrary.utils.PrefUtils
+import com.example.baselibrary.utils.ToastUtils
+import com.example.baselibrary.utils.UIUtils
 import com.example.zs_wan_android.R
 import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
@@ -27,9 +30,6 @@ import com.zs.wanandroid.utils.DialogUtils
 import com.zs.wanandroid.proxy.IConfirmClickCallBack
 import com.zs.wanandroid.ui.web.WebActivity
 import com.zs.wanandroid.utils.AppManager
-import com.zs.wanandroid.utils.PrefUtils
-import com.zs.wanandroid.utils.ToastUtils
-import com.zs.wanandroid.utils.UIUtils
 import com.zs.wanandroid.weight.ReloadListener
 import kotlinx.android.synthetic.main.activity_search.*
 import kotlinx.android.synthetic.main.activity_search.loadingTip

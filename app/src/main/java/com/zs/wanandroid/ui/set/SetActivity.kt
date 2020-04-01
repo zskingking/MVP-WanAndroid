@@ -3,6 +3,10 @@ package com.zs.wanandroid.ui.set
 import android.content.Context
 import android.os.Bundle
 import android.view.View
+import com.example.baselibrary.utils.CacheDataManager
+import com.example.baselibrary.utils.ColorUtils
+import com.example.baselibrary.utils.StatusUtils
+import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.base.BaseActivity
 import com.zs.wanandroid.constants.Constants
@@ -12,9 +16,6 @@ import com.zs.wanandroid.proxy.IConfirmClickCallBack
 import com.zs.wanandroid.ui.login.LoginActivity
 import com.zs.wanandroid.ui.web.WebActivity
 import com.zs.wanandroid.utils.AppManager
-import com.zs.wanandroid.utils.CacheDataManager
-import com.zs.wanandroid.utils.StatusUtils
-import com.zs.wanandroid.utils.ToastUtils
 import kotlinx.android.synthetic.main.activity_set.*
 
 class SetActivity : BaseActivity<SetContract.Presenter<SetContract.View>>(),SetContract.View ,
@@ -108,7 +109,7 @@ class SetActivity : BaseActivity<SetContract.Presenter<SetContract.View>>(),SetC
      * 设置状态栏背景颜色
      */
     override fun setStatusColor() {
-        StatusUtils.setUseStatusBarColor(this, com.zs.wanandroid.utils.ColorUtils.parseColor("#ffffff"))
+        StatusUtils.setUseStatusBarColor(this, ColorUtils.parseColor("#ffffff"))
     }
 
 
