@@ -62,17 +62,6 @@ dependencies {
 
     //第三方依赖包
     //implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
-    //rxjava 已存在3.0版本
-    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjavaVersion"
-    //rxandroid
-    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroidVersion"
-    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttpVersion"
-    // Retrofit库
-    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion"
-    implementation "com.squareup.retrofit2:converter-scalars:$rootProject.ext.retrofitVersion"
-    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofitVersion"
-    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.okhttpVersion"
 
     implementation "com.orhanobut:logger:2.1.1"
     implementation "cn.bingoogolapple:bga-banner:$rootProject.ext.bannerVersion"

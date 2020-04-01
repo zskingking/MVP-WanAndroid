@@ -1,4 +1,4 @@
-package com.zs.wanandroid.http
+package com.example.baselibrary.http
 
 object JsonUtil {
     /**

@@ -1,5 +1,6 @@
 package com.zs.wanandroid.http
 
+import com.example.baselibrary.http.BusinessHttpException
 import com.google.gson.JsonParseException
 import com.zs.wanandroid.utils.AppManager
 import io.reactivex.Observer

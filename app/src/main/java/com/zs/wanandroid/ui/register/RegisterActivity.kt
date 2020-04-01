@@ -5,9 +5,9 @@ import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.view.View
+import com.example.baselibrary.utils.KeyBoardUtil
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.base.BaseActivity
-import com.zs.wanandroid.http.KeyBoardUtil
 import com.zs.wanandroid.utils.ToastUtils
 import kotlinx.android.synthetic.main.activity_register.*
 

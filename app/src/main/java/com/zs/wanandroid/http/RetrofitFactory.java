@@ -1,5 +1,6 @@
 package com.zs.wanandroid.http;
 
+import com.example.baselibrary.http.HttpLoggingInterceptor;
 import com.franmontiel.persistentcookiejar.ClearableCookieJar;
 import com.franmontiel.persistentcookiejar.PersistentCookieJar;
 import com.franmontiel.persistentcookiejar.cache.SetCookieCache;
@@ -10,7 +11,6 @@ import com.zs.wanandroid.constants.Constants;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
-
 import okhttp3.Cache;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
