@@ -53,7 +53,7 @@
                 android:id="@+id/rvCollect"
                 android:overScrollMode="never"/>
         </com.scwang.smartrefresh.layout.SmartRefreshLayout>
-        <com.zs.wanandroid.weight.LoadingTip
+        <com.example.baselibrary.widget.LoadingTip
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/loadingTip"/>

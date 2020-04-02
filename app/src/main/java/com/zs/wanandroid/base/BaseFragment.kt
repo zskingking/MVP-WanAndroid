@@ -19,7 +19,7 @@ abstract class BaseFragment<P: IBasePresenter<*>>: Fragment() {
 
     protected var TAG = javaClass.name
     protected var presenter:P? = null
-    var contentView: View? = null
+    private var contentView: View? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

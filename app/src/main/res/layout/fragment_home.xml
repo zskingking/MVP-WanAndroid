@@ -141,7 +141,7 @@
             android:padding="7dp"
             android:src="@mipmap/home_search" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <com.zs.wanandroid.weight.LoadingTip
+    <com.example.baselibrary.widget.LoadingTip
         android:id="@+id/loadingTip"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

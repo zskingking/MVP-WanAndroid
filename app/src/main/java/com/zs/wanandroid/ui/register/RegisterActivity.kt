@@ -40,7 +40,6 @@ class RegisterActivity : BaseActivity<RegisterContract.Presenter<RegisterContrac
         finish()
     }
 
-
     override fun onError(error: String) {
         ToastUtils.show(error)
         setViewStatus(true)

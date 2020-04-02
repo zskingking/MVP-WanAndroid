@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:overScrollMode="never"/>
-        <com.zs.wanandroid.weight.LoadingTip
+        <com.example.baselibrary.widget.LoadingTip
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/loadingTip"/>

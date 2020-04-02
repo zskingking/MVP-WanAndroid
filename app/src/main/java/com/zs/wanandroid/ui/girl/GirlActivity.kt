@@ -22,8 +22,8 @@ class GirlActivity : BaseActivity<IBasePresenter<IBaseView>>() {
 
 
     override fun init(savedInstanceState: Bundle?) {
-        var girlList = mutableListOf<String>()
-        var fragmentList = mutableListOf<Fragment>()
+        val girlList = mutableListOf<String>()
+        val fragmentList = mutableListOf<Fragment>()
         girlList.add(UrlConstants.GIRL1)
         girlList.add(UrlConstants.GIRL2)
         girlList.add(UrlConstants.GIRL3)

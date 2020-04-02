@@ -1,4 +1,4 @@
-package com.zs.wanandroid.weight
+package com.example.baselibrary.widget
 
 import android.content.Context
 import android.util.AttributeSet
@@ -7,6 +7,7 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import com.example.baselibrary.R
 import com.wang.avi.AVLoadingIndicatorView
+import com.zs.wanandroid.weight.ReloadListener
 
 /**
  * des 辅助站位图
@@ -20,7 +21,7 @@ class LoadingTip : RelativeLayout {
     private var indicatorView: AVLoadingIndicatorView? = null
     private var llInternetError: LinearLayout? = null
 
-    private var reloadListener:ReloadListener? = null
+    private var reloadListener: ReloadListener? = null
 
     constructor(context: Context) : super(context) {
         initView(context)

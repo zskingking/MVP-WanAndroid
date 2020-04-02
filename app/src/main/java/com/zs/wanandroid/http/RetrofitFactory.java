@@ -6,7 +6,6 @@ import com.franmontiel.persistentcookiejar.ClearableCookieJar;
 import com.franmontiel.persistentcookiejar.PersistentCookieJar;
 import com.franmontiel.persistentcookiejar.cache.SetCookieCache;
 import com.franmontiel.persistentcookiejar.persistence.SharedPrefsCookiePersistor;
-import com.zs.wanandroid.WanAndroidApplication;
 import com.zs.wanandroid.constants.ApiConstants;
 import com.zs.wanandroid.constants.Constants;
 import java.io.File;
@@ -23,7 +22,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * @author zs
  * @date 2020-03-05
  */
-public class RetrofitFactory {
+class RetrofitFactory {
 
     private static OkHttpClient.Builder getOkHttpClientBuilder() {
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor("OkHttp");
@@ -46,7 +45,7 @@ public class RetrofitFactory {
                 .cache(cache);
     }
 
-    public static Retrofit factory() {
+    static Retrofit factory() {
         OkHttpClient okHttpClient = getOkHttpClientBuilder().build();
         return new Retrofit.Builder()
                 .client(okHttpClient)

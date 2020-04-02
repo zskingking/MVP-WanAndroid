@@ -13,7 +13,7 @@
        android:paddingRight="@dimen/padding_right"
        android:paddingStart="@dimen/padding_left"
        android:paddingEnd="@dimen/padding_right" />
-   <com.zs.wanandroid.weight.LoadingTip
+   <com.example.baselibrary.widget.LoadingTip
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:id="@+id/loadingTip"

@@ -1,15 +1,10 @@
 package com.zs.wanandroid.adapter
 
-import android.view.View
-import android.widget.TextView
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.donkingliang.labels.LabelsView
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.entity.SystemListEntity
-import kotlinx.android.synthetic.main.activity_search.*
-import kotlinx.android.synthetic.main.activity_search.view.*
-
 
 /**
  * 体系 适配器
