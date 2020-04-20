@@ -63,16 +63,7 @@ dependencies {
     //第三方依赖包
     //implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
 
-    implementation "com.orhanobut:logger:2.1.1"
-    implementation "cn.bingoogolapple:bga-banner:$rootProject.ext.bannerVersion"
-    implementation "com.scwang.smartrefresh:SmartRefreshLayout:$rootProject.ext.refreshLayoutVersion"
-    implementation "com.scwang.smartrefresh:SmartRefreshHeader:$rootProject.ext.refreshHeaderVersion"
-    implementation "org.greenrobot:eventbus:$rootProject.ext.eventBusVersion"
-    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:$rootProject.ext.baseAdapterVersion"
-    implementation "org.greenrobot:greendao:$rootProject.ext.greenDaoVersion"
-    implementation "pub.devrel:easypermissions:$rootProject.ext.permissionVersion"
-    implementation "com.github.donkingliang:LabelsView:$rootProject.ext.labelsViewVersion"
-    implementation "com.github.franmontiel:PersistentCookieJar:$rootProject.ext.cookieVersion"
+
 
     implementation project(":baselibrary")
 }

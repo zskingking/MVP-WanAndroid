@@ -41,5 +41,15 @@ dependencies {
     api "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
     api "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofitVersion"
     api "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.okhttpVersion"
+    api "com.orhanobut:logger:2.1.1"
+    api "cn.bingoogolapple:bga-banner:$rootProject.ext.bannerVersion"
+    api "com.scwang.smartrefresh:SmartRefreshLayout:$rootProject.ext.refreshLayoutVersion"
+    api "com.scwang.smartrefresh:SmartRefreshHeader:$rootProject.ext.refreshHeaderVersion"
+    api "org.greenrobot:eventbus:$rootProject.ext.eventBusVersion"
+    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:$rootProject.ext.baseAdapterVersion"
+    api "org.greenrobot:greendao:$rootProject.ext.greenDaoVersion"
+    api "pub.devrel:easypermissions:$rootProject.ext.permissionVersion"
+    api "com.github.donkingliang:LabelsView:$rootProject.ext.labelsViewVersion"
+    api "com.github.franmontiel:PersistentCookieJar:$rootProject.ext.cookieVersion"
 
 }

@@ -1,4 +1,2 @@
 rootProject.name='WanAndroid-ZS'
-include ':app'
-include ':baselibrary'
-include ':weather'
+include ':app',':baselibrary',':weather'
