@@ -5,10 +5,9 @@ import androidx.fragment.app.Fragment
 import com.example.baselibrary.utils.StatusUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.adapter.FragmentListAdapter
-import com.zs.wanandroid.base.BaseActivity
-import com.zs.wanandroid.base.IBasePresenter
-import com.zs.wanandroid.base.IBaseView
-import com.zs.wanandroid.constants.Constants
+import com.zs.wanandroid.base.AppBaseActivity
+import com.example.baselibrary.base.IBasePresenter
+import com.example.baselibrary.base.IBaseView
 import com.zs.wanandroid.constants.UrlConstants
 import kotlinx.android.synthetic.main.activity_girl.*
 
@@ -18,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_girl.*
  * @author zs
  * @date 2020-03-15
  */
-class GirlActivity : BaseActivity<IBasePresenter<IBaseView>>() {
+class GirlActivity : AppBaseActivity<IBasePresenter<IBaseView>>() {
 
 
     override fun init(savedInstanceState: Bundle?) {

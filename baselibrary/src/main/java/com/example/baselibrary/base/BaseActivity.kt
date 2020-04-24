@@ -1,12 +1,10 @@
-package com.zs.wanandroid.base
+package com.example.baselibrary.base
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.baselibrary.utils.ColorUtils
 import com.example.baselibrary.utils.StatusUtils
-import com.zs.wanandroid.ui.login.LoginActivity
-import com.zs.wanandroid.utils.AppManager
+
 
 abstract class BaseActivity<P: IBasePresenter<*>> : AppCompatActivity() {
 
@@ -45,32 +43,7 @@ abstract class BaseActivity<P: IBasePresenter<*>> : AppCompatActivity() {
     }
 
 
-    /**
-     * 界面跳转
-     * @param isLogin 启动界面是否需要登录
-     */
-    protected fun intent(clazz:Class<*>,isLogin:Boolean){
-        //需要登录&&未登录
-        if (isLogin && !AppManager.isLogin()) {
-            startActivity(Intent(this, LoginActivity::class.java))
-        }else{
-            startActivity(Intent(this,clazz))
-        }
-    }
-    /**
-     * 携带bundle跳转
-     * @param isLogin 启动界面是否需要登录
-     */
-    protected fun intent(bundle: Bundle,clazz:Class<*>,isLogin:Boolean){
-        //需要登录&&未登录
-        if (isLogin && !AppManager.isLogin()) {
-            startActivity(Intent(this, LoginActivity::class.java))
-        }else{
-            startActivity(Intent(this, clazz).apply {
-                putExtras(bundle)
-            })
-        }
-    }
+
 
     protected abstract fun init(savedInstanceState: Bundle?)
     protected abstract fun createPresenter(): P?

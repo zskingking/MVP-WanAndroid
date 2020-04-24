@@ -13,15 +13,13 @@ import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener
 import com.zs.wanandroid.adapter.ArticleAdapter
 import com.zs.wanandroid.adapter.OnCollectClickListener
-import com.zs.wanandroid.base.LazyFragment
+import com.zs.wanandroid.base.AppLazyFragment
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.ArticleEntity
 import com.zs.wanandroid.ui.web.WebActivity
 import com.zs.wanandroid.utils.AppManager
 import com.zs.wanandroid.weight.ReloadListener
 import kotlinx.android.synthetic.main.fragment_article_list.*
-import kotlinx.android.synthetic.main.fragment_article_list.loadingTip
-import kotlinx.android.synthetic.main.fragment_article_list.smartRefresh
 
 /**
  * des 项目/公众号列表
@@ -29,7 +27,7 @@ import kotlinx.android.synthetic.main.fragment_article_list.smartRefresh
  * @author zs
  * @date 2020-03-14
  */
-class TabListFragment : LazyFragment<TabListContract.Presenter<TabListContract.View>>()
+class TabListFragment : AppLazyFragment<TabListContract.Presenter<TabListContract.View>>()
 ,TabListContract.View,OnCollectClickListener,BaseQuickAdapter.OnItemClickListener
     , OnLoadMoreListener, OnRefreshListener, ReloadListener {
 

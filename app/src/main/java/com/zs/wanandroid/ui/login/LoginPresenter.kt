@@ -1,7 +1,7 @@
 package com.zs.wanandroid.ui.login
 
 import com.example.baselibrary.utils.PrefUtils
-import com.zs.wanandroid.base.BasePresenter
+import com.example.baselibrary.base.BasePresenter
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.UserEntity
 import com.zs.wanandroid.http.HttpDefaultObserver

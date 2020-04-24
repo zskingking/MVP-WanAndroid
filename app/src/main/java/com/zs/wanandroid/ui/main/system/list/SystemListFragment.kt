@@ -7,7 +7,7 @@ import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.adapter.OnSystemClickListener
 import com.zs.wanandroid.adapter.SystemAdapter
-import com.zs.wanandroid.base.LazyFragment
+import com.zs.wanandroid.base.AppLazyFragment
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.SystemListEntity
 import com.zs.wanandroid.ui.main.system.activity.SystemActivity
@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_system_list.*
  * @author zs
  * @date 2020-03-16
  */
-class SystemListFragment : LazyFragment<SystemListContract.Presenter<SystemListContract.View>>()
+class SystemListFragment : AppLazyFragment<SystemListContract.Presenter<SystemListContract.View>>()
     ,SystemListContract.View ,OnSystemClickListener{
 
     private var systemAdapter:SystemAdapter? = null

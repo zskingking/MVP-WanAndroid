@@ -1,7 +1,7 @@
 package com.zs.wanandroid.ui.main.system.navigaton
 
-import com.zs.wanandroid.base.IBasePresenter
-import com.zs.wanandroid.base.IBaseView
+import com.example.baselibrary.base.IBasePresenter
+import com.example.baselibrary.base.IBaseView
 import com.zs.wanandroid.entity.NavigationEntity
 
 

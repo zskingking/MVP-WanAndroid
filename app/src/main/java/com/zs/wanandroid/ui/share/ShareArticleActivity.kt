@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
-import com.zs.wanandroid.base.BaseActivity
+import com.zs.wanandroid.base.AppBaseActivity
 import com.zs.wanandroid.utils.DialogUtils
 import kotlinx.android.synthetic.main.activity_share_articel.*
 
@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_share_articel.*
  * @author zs
  * @date 2020-03-18
  */
-class ShareArticleActivity : BaseActivity<ShareContract.Presenter<ShareContract.View>>(),
+class ShareArticleActivity : AppBaseActivity<ShareContract.Presenter<ShareContract.View>>(),
     ShareContract.View, View.OnClickListener {
 
 

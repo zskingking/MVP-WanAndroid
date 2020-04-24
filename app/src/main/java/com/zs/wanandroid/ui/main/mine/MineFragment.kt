@@ -5,7 +5,7 @@ import android.view.View
 import com.example.baselibrary.utils.PrefUtils
 import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
-import com.zs.wanandroid.base.LazyFragment
+import com.zs.wanandroid.base.AppLazyFragment
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.constants.UrlConstants
 import com.zs.wanandroid.entity.IntegralEntity
@@ -31,7 +31,7 @@ import org.greenrobot.eventbus.ThreadMode
  * @author zs
  * @date 2020-03-13
  */
-class MineFragment : LazyFragment<MineContract.Presenter<MineContract.View>>(),View.OnClickListener,
+class MineFragment : AppLazyFragment<MineContract.Presenter<MineContract.View>>(),View.OnClickListener,
     MineContract.View {
 
     private var integralEntity: IntegralEntity? = null

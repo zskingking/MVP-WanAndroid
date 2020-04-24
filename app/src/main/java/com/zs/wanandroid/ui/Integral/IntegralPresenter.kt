@@ -1,6 +1,6 @@
 package com.zs.wanandroid.ui.Integral
 
-import com.zs.wanandroid.base.BasePresenter
+import com.example.baselibrary.base.BasePresenter
 import com.zs.wanandroid.entity.IntegralRecordEntity
 import com.zs.wanandroid.http.HttpDefaultObserver
 import com.zs.wanandroid.http.RetrofitHelper
@@ -13,7 +13,7 @@ import io.reactivex.schedulers.Schedulers
  * @author zs
  * @date 2020-03-17
  */
-class IntegralPresenter(view:IntegralContract.View):BasePresenter<IntegralContract.View>(view)
+class IntegralPresenter(view:IntegralContract.View): BasePresenter<IntegralContract.View>(view)
 ,IntegralContract.Presenter<IntegralContract.View>{
 
     override fun loadData(pageNum:Int) {

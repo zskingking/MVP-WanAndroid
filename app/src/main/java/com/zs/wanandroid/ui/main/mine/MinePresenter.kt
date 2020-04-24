@@ -1,7 +1,7 @@
 package com.zs.wanandroid.ui.main.mine
 
 import com.example.baselibrary.utils.PrefUtils
-import com.zs.wanandroid.base.BasePresenter
+import com.example.baselibrary.base.BasePresenter
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.IntegralEntity
 import com.zs.wanandroid.http.HttpDefaultObserver

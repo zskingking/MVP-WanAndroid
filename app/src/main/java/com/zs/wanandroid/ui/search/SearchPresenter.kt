@@ -1,6 +1,6 @@
 package com.zs.wanandroid.ui.search
 
-import com.zs.wanandroid.base.BasePresenter
+import com.example.baselibrary.base.BasePresenter
 import com.zs.wanandroid.entity.ArticleEntity
 import com.zs.wanandroid.http.HttpDefaultObserver
 import com.zs.wanandroid.http.RetrofitHelper

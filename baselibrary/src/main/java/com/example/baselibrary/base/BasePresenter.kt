@@ -1,4 +1,4 @@
-package com.zs.wanandroid.base
+package com.example.baselibrary.base
 
 
 import io.reactivex.disposables.CompositeDisposable

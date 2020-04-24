@@ -13,7 +13,7 @@ import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener
 import com.zs.wanandroid.adapter.CollectAdapter
 import com.zs.wanandroid.adapter.OnCollectClickListener
-import com.zs.wanandroid.base.BaseActivity
+import com.zs.wanandroid.base.AppBaseActivity
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.CollectEntity
 import com.zs.wanandroid.ui.web.WebActivity
@@ -28,7 +28,7 @@ import kotlinx.android.synthetic.main.activity_collect.smartRefresh
  * @author zs
  * @date 2020-03-13
  */
-class CollectActivity : BaseActivity<CollectContract.Presenter<CollectContract.View>>(),CollectContract.View
+class CollectActivity : AppBaseActivity<CollectContract.Presenter<CollectContract.View>>(),CollectContract.View
 ,OnCollectClickListener,OnLoadMoreListener, OnRefreshListener, ReloadListener, BaseQuickAdapter.OnItemClickListener {
 
     private var collectAdapter:CollectAdapter? = null

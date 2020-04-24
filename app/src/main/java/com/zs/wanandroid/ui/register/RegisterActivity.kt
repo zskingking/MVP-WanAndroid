@@ -8,7 +8,7 @@ import android.view.View
 import com.example.baselibrary.utils.KeyBoardUtil
 import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
-import com.zs.wanandroid.base.BaseActivity
+import com.zs.wanandroid.base.AppBaseActivity
 import kotlinx.android.synthetic.main.activity_register.*
 
 
@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.activity_register.*
  * @author zs
  * @date
  */
-class RegisterActivity : BaseActivity<RegisterContract.Presenter<RegisterContract.View>>()
+class RegisterActivity : AppBaseActivity<RegisterContract.Presenter<RegisterContract.View>>()
     ,RegisterContract.View , View.OnClickListener{
     /**
      * 密码是否显示明文

@@ -1,7 +1,7 @@
 package com.zs.wanandroid.ui.set
 
-import com.zs.wanandroid.base.IBasePresenter
-import com.zs.wanandroid.base.IBaseView
+import com.example.baselibrary.base.IBasePresenter
+import com.example.baselibrary.base.IBaseView
 
 interface SetContract {
     interface View:IBaseView{

@@ -8,14 +8,14 @@ import android.view.View
 import com.example.baselibrary.utils.PrefUtils
 import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
-import com.zs.wanandroid.base.BaseActivity
+import com.zs.wanandroid.base.AppBaseActivity
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.ui.register.RegisterActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 
 
-class LoginActivity : BaseActivity<LoginContract.Presenter<LoginContract.View>>(),
+class LoginActivity : AppBaseActivity<LoginContract.Presenter<LoginContract.View>>(),
     LoginContract.View, View.OnClickListener{
 
     /**

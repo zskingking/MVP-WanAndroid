@@ -20,7 +20,7 @@ import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener
 import com.zs.wanandroid.adapter.OnCollectClickListener
-import com.zs.wanandroid.base.LazyFragment
+import com.zs.wanandroid.base.AppLazyFragment
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.event.LoginEvent
 import com.zs.wanandroid.event.LogoutEvent
@@ -30,8 +30,6 @@ import com.zs.wanandroid.ui.web.WebActivity
 import com.zs.wanandroid.utils.AppManager
 import com.zs.wanandroid.weight.ReloadListener
 import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_home.loadingTip
-import kotlinx.android.synthetic.main.fragment_home.smartRefresh
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
@@ -43,7 +41,7 @@ import org.greenrobot.eventbus.ThreadMode
  * @author zs
  * @date 2020-03-09
  */
-class HomeFragment : LazyFragment<HomeContract.Presenter<HomeContract.View>>() ,BGABanner.Adapter<ImageView?, String?>
+class HomeFragment : AppLazyFragment<HomeContract.Presenter<HomeContract.View>>() ,BGABanner.Adapter<ImageView?, String?>
 ,BGABanner.Delegate<ImageView?, String?> , HomeContract.View,OnLoadMoreListener,OnRefreshListener,ReloadListener
 ,BaseQuickAdapter.OnItemClickListener, OnCollectClickListener {
     private var pageNum:Int = 0

@@ -9,7 +9,7 @@ import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.adapter.NavigationAdapter
 import com.zs.wanandroid.adapter.OnSystemClickListener
-import com.zs.wanandroid.base.LazyFragment
+import com.zs.wanandroid.base.AppLazyFragment
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.NavigationEntity
 import com.zs.wanandroid.ui.web.WebActivity
@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.fragment_system_list.*
 /**
  * 导航列表
  */
-class NavigationFragment  : LazyFragment<NavigationContract.Presenter<NavigationContract.View>>()
+class NavigationFragment  : AppLazyFragment<NavigationContract.Presenter<NavigationContract.View>>()
     , NavigationContract.View , OnSystemClickListener {
 
     private var navigationList = mutableListOf<NavigationEntity>()

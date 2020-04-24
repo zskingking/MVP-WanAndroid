@@ -10,7 +10,7 @@ import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener
 import com.zs.wanandroid.adapter.RankAdapter
-import com.zs.wanandroid.base.BaseActivity
+import com.zs.wanandroid.base.AppBaseActivity
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.constants.UrlConstants
 import com.zs.wanandroid.entity.RankEntity
@@ -24,7 +24,7 @@ import kotlinx.android.synthetic.main.activity_rank.*
  * @author zs
  * @date 2020-03-16
  */
-class RankActivity : BaseActivity<RankContract.Presenter<RankContract.View>>(),RankContract.View
+class RankActivity : AppBaseActivity<RankContract.Presenter<RankContract.View>>(),RankContract.View
     , OnLoadMoreListener, OnRefreshListener, ReloadListener {
 
     private var rankAdapter: RankAdapter? = null

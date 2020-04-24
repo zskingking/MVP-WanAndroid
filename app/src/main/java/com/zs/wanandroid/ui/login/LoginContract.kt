@@ -1,7 +1,7 @@
 package com.zs.wanandroid.ui.login
 
-import com.zs.wanandroid.base.IBasePresenter
-import com.zs.wanandroid.base.IBaseView
+import com.example.baselibrary.base.IBasePresenter
+import com.example.baselibrary.base.IBaseView
 
 interface LoginContract {
     interface View : IBaseView {

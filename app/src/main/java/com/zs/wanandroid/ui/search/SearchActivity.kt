@@ -23,7 +23,7 @@ import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.zs.wanandroid.adapter.ArticleAdapter
 import com.zs.wanandroid.adapter.OnCollectClickListener
-import com.zs.wanandroid.base.BaseActivity
+import com.zs.wanandroid.base.AppBaseActivity
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.ArticleEntity
 import com.zs.wanandroid.utils.DialogUtils
@@ -40,7 +40,7 @@ import kotlinx.android.synthetic.main.activity_search.smartRefresh
  * @author zs
  * @date 2020-03-15
  */
-class SearchActivity : BaseActivity<SearchContract.Presenter<SearchContract.View>>(),SearchContract.View
+class SearchActivity : AppBaseActivity<SearchContract.Presenter<SearchContract.View>>(),SearchContract.View
     , View.OnClickListener, OnLoadMoreListener, ReloadListener, BaseQuickAdapter.OnItemClickListener,
     OnCollectClickListener {
 

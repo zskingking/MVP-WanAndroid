@@ -1,6 +1,6 @@
 package com.zs.wanandroid.ui.main.home
 
-import com.zs.wanandroid.base.BasePresenter
+import com.example.baselibrary.base.BasePresenter
 import com.zs.wanandroid.entity.BannerEntity
 import com.zs.wanandroid.entity.ArticleEntity
 import com.zs.wanandroid.http.HttpDefaultObserver

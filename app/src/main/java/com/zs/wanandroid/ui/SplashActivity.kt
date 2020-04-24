@@ -1,7 +1,7 @@
 package com.zs.wanandroid.ui
 
-import com.zs.wanandroid.base.BaseActivity
-import com.zs.wanandroid.base.IBasePresenter
+import com.zs.wanandroid.base.AppBaseActivity
+import com.example.baselibrary.base.IBasePresenter
 import com.zs.wanandroid.ui.main.MainActivity
 import io.reactivex.Observable
 import io.reactivex.disposables.Disposable
@@ -30,7 +30,7 @@ import pub.devrel.easypermissions.EasyPermissions.PermissionCallbacks
  * @author zs
  * @date 2020-03-07
  */
-class SplashActivity : BaseActivity<IBasePresenter<*>>(), PermissionCallbacks {
+class SplashActivity : AppBaseActivity<IBasePresenter<*>>(), PermissionCallbacks {
 
     private var disposable:Disposable? = null
     private val tips = "玩安卓现在要向您申请存储权限，用于存储历史记录以及保存小姐姐图片，您也可以在设置中手动开启或者取消。"

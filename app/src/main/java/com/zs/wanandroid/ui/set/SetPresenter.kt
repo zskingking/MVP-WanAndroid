@@ -1,6 +1,6 @@
 package com.zs.wanandroid.ui.set
 
-import com.zs.wanandroid.base.BasePresenter
+import com.example.baselibrary.base.BasePresenter
 import com.zs.wanandroid.http.HttpDefaultObserver
 import com.zs.wanandroid.http.RetrofitHelper
 import io.reactivex.android.schedulers.AndroidSchedulers

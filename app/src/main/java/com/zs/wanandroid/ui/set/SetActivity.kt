@@ -8,7 +8,7 @@ import com.example.baselibrary.utils.ColorUtils
 import com.example.baselibrary.utils.StatusUtils
 import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
-import com.zs.wanandroid.base.BaseActivity
+import com.zs.wanandroid.base.AppBaseActivity
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.constants.UrlConstants
 import com.zs.wanandroid.utils.DialogUtils
@@ -18,7 +18,7 @@ import com.zs.wanandroid.ui.web.WebActivity
 import com.zs.wanandroid.utils.AppManager
 import kotlinx.android.synthetic.main.activity_set.*
 
-class SetActivity : BaseActivity<SetContract.Presenter<SetContract.View>>(),SetContract.View ,
+class SetActivity : AppBaseActivity<SetContract.Presenter<SetContract.View>>(),SetContract.View ,
     View.OnClickListener {
 
 

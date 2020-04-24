@@ -12,7 +12,7 @@ import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener
 import com.zs.wanandroid.adapter.MyArticleAdapter
-import com.zs.wanandroid.base.BaseActivity
+import com.zs.wanandroid.base.AppBaseActivity
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.ArticleEntity
 import com.zs.wanandroid.entity.MyArticleEntity
@@ -34,7 +34,7 @@ import org.greenrobot.eventbus.ThreadMode
  * @author zs
  * @date 2020-03-17
  */
-class MyArticleActivity : BaseActivity<MyArticleContract.Presenter<MyArticleContract.View>>()
+class MyArticleActivity : AppBaseActivity<MyArticleContract.Presenter<MyArticleContract.View>>()
     ,MyArticleContract.View , OnLoadMoreListener, OnRefreshListener, ReloadListener
     ,BaseQuickAdapter.OnItemChildClickListener {
 

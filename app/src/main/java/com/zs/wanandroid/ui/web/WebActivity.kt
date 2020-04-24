@@ -7,8 +7,8 @@ import android.view.KeyEvent
 import android.webkit.WebChromeClient
 import android.webkit.WebSettings
 import android.webkit.WebView
-import com.zs.wanandroid.base.BaseActivity
-import com.zs.wanandroid.base.IBasePresenter
+import com.zs.wanandroid.base.AppBaseActivity
+import com.example.baselibrary.base.IBasePresenter
 import com.zs.wanandroid.constants.Constants
 import kotlinx.android.synthetic.main.activity_web.*
 import android.webkit.WebResourceRequest
@@ -21,7 +21,7 @@ import com.example.zs_wan_android.R
  * @author zs
  * @date 2020-03-16修改
  */
-class WebActivity : BaseActivity<IBasePresenter<*>>() {
+class WebActivity : AppBaseActivity<IBasePresenter<*>>() {
 
     private var loadUrl: String? = null
     private var title: String? = null

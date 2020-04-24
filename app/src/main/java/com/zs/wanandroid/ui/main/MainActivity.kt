@@ -7,9 +7,9 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Lifecycle
 import com.example.baselibrary.utils.ToastUtils
 import com.example.zs_wan_android.R
-import com.zs.wanandroid.base.BaseActivity
-import com.zs.wanandroid.base.IBasePresenter
-import com.zs.wanandroid.base.IBaseView
+import com.zs.wanandroid.base.AppBaseActivity
+import com.example.baselibrary.base.IBasePresenter
+import com.example.baselibrary.base.IBaseView
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.ui.main.home.HomeFragment
 import com.zs.wanandroid.ui.main.mine.MineFragment
@@ -24,7 +24,7 @@ import kotlinx.android.synthetic.main.activity_main.*
  * @author zs
  * @date 2020-03-07
  */
-class MainActivity : BaseActivity<IBasePresenter<*>>(),
+class MainActivity : AppBaseActivity<IBasePresenter<*>>(),
     IBaseView {
 
     private var lastIndex = 0

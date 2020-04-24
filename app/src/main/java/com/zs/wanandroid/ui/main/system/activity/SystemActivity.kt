@@ -13,14 +13,14 @@ import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener
 import com.zs.wanandroid.adapter.ArticleAdapter
 import com.zs.wanandroid.adapter.OnCollectClickListener
-import com.zs.wanandroid.base.BaseActivity
+import com.zs.wanandroid.base.AppBaseActivity
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.entity.ArticleEntity
 import com.zs.wanandroid.ui.web.WebActivity
 import com.zs.wanandroid.weight.ReloadListener
 import kotlinx.android.synthetic.main.activity_system.*
 
-class SystemActivity : BaseActivity<SystemContract.Presenter<SystemContract.View>>(),
+class SystemActivity : AppBaseActivity<SystemContract.Presenter<SystemContract.View>>(),
     SystemContract.View, OnCollectClickListener,
     OnLoadMoreListener, OnRefreshListener, ReloadListener, BaseQuickAdapter.OnItemClickListener {
 

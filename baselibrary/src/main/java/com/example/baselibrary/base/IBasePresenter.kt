@@ -1,4 +1,4 @@
-package com.zs.wanandroid.base
+package com.example.baselibrary.base
 
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver

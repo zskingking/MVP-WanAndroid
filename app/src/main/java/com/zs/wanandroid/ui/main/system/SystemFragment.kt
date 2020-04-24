@@ -7,8 +7,8 @@ import androidx.fragment.app.Fragment
 import com.example.zs_wan_android.R
 import com.zs.wanandroid.adapter.FragmentListAdapter
 import com.zs.wanandroid.adapter.TabAdapter
-import com.zs.wanandroid.base.BaseFragment
-import com.zs.wanandroid.base.IBasePresenter
+import com.zs.wanandroid.base.AppBaseFragment
+import com.example.baselibrary.base.IBasePresenter
 import com.zs.wanandroid.constants.Constants
 import com.zs.wanandroid.ui.main.system.list.SystemListFragment
 import com.zs.wanandroid.ui.main.system.navigaton.NavigationFragment
@@ -22,7 +22,7 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigat
  * @author zs
  * @date 2020-03-16
  */
-class SystemFragment : BaseFragment<IBasePresenter<*>>(),OnTabClickListener {
+class SystemFragment : AppBaseFragment<IBasePresenter<*>>(),OnTabClickListener {
 
 
     private var tabList = mutableListOf<String>()

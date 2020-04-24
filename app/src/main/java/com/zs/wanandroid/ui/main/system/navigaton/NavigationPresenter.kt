@@ -1,6 +1,6 @@
 package com.zs.wanandroid.ui.main.system.navigaton
 
-import com.zs.wanandroid.base.BasePresenter
+import com.example.baselibrary.base.BasePresenter
 import com.zs.wanandroid.entity.NavigationEntity
 import com.zs.wanandroid.entity.SystemListEntity
 import com.zs.wanandroid.http.HttpDefaultObserver
