@@ -8,21 +8,5 @@ import com.example.baselibrary.base.IBasePresenter
 
 abstract class WeatherBaseActivity<P: IBasePresenter<*>> :BaseActivity<P>() {
 
-    /**
-     * 界面跳转
-     * @param
-     */
-    protected fun intent(clazz:Class<*>){
-        startActivity(Intent(this,clazz))
-    }
 
-    /**
-     * 携带bundle跳转
-     * @param
-     */
-    protected fun intent(bundle: Bundle, clazz:Class<*>){
-        startActivity(Intent(this, clazz).apply {
-            putExtras(bundle)
-        })
-    }
 }

@@ -1,11 +1,16 @@
 package com.example.baselibrary.base
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.baselibrary.utils.ColorUtils
 import com.example.baselibrary.utils.StatusUtils
 
-
+/**
+ * 基于mvp
+ * @author zs
+ * @date 2020-04-24修改
+ */
 abstract class BaseActivity<P: IBasePresenter<*>> : AppCompatActivity() {
 
     protected val TAG = javaClass.name
@@ -42,7 +47,23 @@ abstract class BaseActivity<P: IBasePresenter<*>> : AppCompatActivity() {
         StatusUtils.setSystemStatus(this, true, true)
     }
 
+    /**
+     * 界面跳转
+     * @param
+     */
+    protected fun intent(clazz:Class<*>){
+        startActivity(Intent(this,clazz))
+    }
 
+    /**
+     * 携带bundle跳转
+     * @param
+     */
+    protected fun intent(bundle: Bundle, clazz:Class<*>){
+        startActivity(Intent(this, clazz).apply {
+            putExtras(bundle)
+        })
+    }
 
 
     protected abstract fun init(savedInstanceState: Bundle?)
